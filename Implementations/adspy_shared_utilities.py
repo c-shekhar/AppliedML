@@ -15,7 +15,7 @@ import matplotlib.patches as mpatches
 def load_crime_dataset():
     # Communities and Crime dataset for regression
     # https://archive.ics.uci.edu/ml/datasets/Communities+and+Crime+Unnormalized
-
+    
     crime = pd.read_table('CommViolPredUnnormalizedData.txt', sep=',', na_values='?')
     # remove features with poor coverage or lower relevance, and keep ViolentCrimesPerPop target column
     columns_to_keep = [5, 6] + list(range(11,26)) + list(range(32, 103)) + [145]  
