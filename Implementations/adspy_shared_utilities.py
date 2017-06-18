@@ -82,7 +82,7 @@ def plot_class_regions_for_classifier_subplot(clf, X, y, X_test, y_test, title, 
     color_list_bold = ['#EEEE00', '#000000', '#00CC00', '#0000CC']
     cmap_light = ListedColormap(color_list_light[0:numClasses])
     cmap_bold  = ListedColormap(color_list_bold[0:numClasses])
-
+    
     h = 0.03
     k = 0.5
     x_plot_adjust = 0.1
